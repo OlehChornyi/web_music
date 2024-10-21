@@ -44,3 +44,8 @@ ScrollReveal().reveal(".header__stats", {
     ...scrollRevealOption,
     delay: 2000,
 });
+
+ScrollReveal().reveal(".genre__card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
