@@ -278,7 +278,7 @@ nav {
     opacity: 1;
 }
 
-.genre__link a{
+.genre__link a {
     padding: 14px 14px;
     font-size: 2rem;
     color: var(--text-dark);
@@ -286,10 +286,20 @@ nav {
     border-radius: 100%;
 }
 
-.genre__card h4{
+.genre__card h4 {
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--white);
+    text-align: center;
+}
+
+.banner__container h2 {
+    max-width: 825px;
+    margin-inline: auto;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 3.75rem;
     text-align: center;
 }
 
@@ -299,7 +309,7 @@ nav {
         line-height: 6rem;
     }
 
-    .genre__grid{
+    .genre__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -366,7 +376,7 @@ nav {
         grid-area: 2/3/3/5;
     }
 
-    .genre__grid{
+    .genre__grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
