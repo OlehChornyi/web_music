@@ -49,3 +49,19 @@ ScrollReveal().reveal(".genre__card", {
     ...scrollRevealOption,
     interval: 500,
 });
+
+ScrollReveal().reveal(".feature__image img", {
+    ...scrollRevealOption,
+    origin: "right",
+});
+
+ScrollReveal().reveal(".feature__content .section__header", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".feature__list li", {
+    ...scrollRevealOption,
+    delay: 1000,
+    interval: 500,
+});
