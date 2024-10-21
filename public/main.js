@@ -65,3 +65,8 @@ ScrollReveal().reveal(".feature__list li", {
     delay: 1000,
     interval: 500,
 });
+
+const swiper = new Swiper(".swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+});

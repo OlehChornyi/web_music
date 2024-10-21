@@ -359,6 +359,69 @@ nav {
     color: var(--white);
 }
 
+.client__container{
+    padding: 5rem 1rem;
+}
+
+.swiper{
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.swiper-slide{
+    max-width: 400px;
+}
+
+.client__card{
+    padding: 1.5rem;
+    max-width: 400px;
+    background-image: var(--gradient-1);
+    border-radius: 1rem;
+}
+
+.client_ratings{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.client__ratings span{
+    color: gold;
+}
+
+.client__ratings span:last-child{
+    color: var(--text-light);
+}
+
+.client__card p{
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.client__details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.client__details img{
+    max-width: 50px;
+    border-radius: 100%;
+}
+
+.client__details h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.client__details h5{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
 @media (width > 540px) {
     .header__container h1 {
         font-size: 4.5rem;
