@@ -455,37 +455,63 @@ nav {
     z-index: -1;
 }
 
-.music__content .section__description{
+.music__content .section__description {
     margin-bottom: 2rem;
 }
 
-.music__btns{
+.music__btns {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
 
-.music__btns .btn{
+.music__btns .btn {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.music__btns .btn span{
+.music__btns .btn span {
     font-size: 1.25rem;
     color: var(--text-dark);
 }
 
-.music__btns a{
+.music__btns a {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--text-light);
 }
 
-.music__btns a:hover{
+.music__btns a:hover {
     color: var(--secondary-color);
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1rem;
+    text-align: center;
+}
+
+.footer__logo {
+    grid-area: 1/1/2/4;
+}
+
+.footer__links li:not(.footer__logo) a {
+    color: var(--text-light);
+}
+
+.footer__links li:not(.footer__logo) a:hover {
+    color: var(--secondary-color);
+}
+
+.footer__bar{
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
 }
 
 @media (width > 540px) {
@@ -578,16 +604,28 @@ nav {
         text-align: left;
     }
 
-    .music__content{
+    .music__content {
         padding: 4rem 2rem;
     }
 
-    .music__content :is(.section__header, .section__description){
+    .music__content :is(.section__header, .section__description) {
         max-width: 500px;
         text-align: left;
     }
 
-    .music__btns{
+    .music__btns {
         justify-content: flex-start;
+    }
+
+    .footer__links{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media (width > 1024px) {
+    .genre__grid{
+        gap: 2rem;
     }
 }
